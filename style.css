@@ -1,0 +1,94 @@
+@font-face {
+	font-family: 'Caveat';
+	src: local('Caveat Bold'), local('Caveat-Bold'),
+		url('fonts/Caveat-Bold.woff2') format('woff2'),
+		url('fonts/Caveat-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Caveat';
+	src: local('Caveat Regular'), local('Caveat-Regular'),
+		url('fonts/Caveat-Regular.woff2') format('woff2'),
+		url('fonts/Caveat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	background-color: #030b22;
+	box-sizing: border-box;
+	height: 100vh;
+	margin: 0;
+	padding: 180px 60px 90px;
+}
+
+#main {
+	border-radius: 18px;
+	border: 3px solid #538cee;
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px;
+	position: relative;
+	width: min-content;
+	z-index: 2;
+}
+
+#effect {
+	background-color: #88b2f5;
+	border-radius: 50%;
+	filter: blur(90px);
+	height: 180px;
+	left: 50%;
+	position: absolute;
+	top: 72px;
+	transform: translateX(-50%);
+	width: 330px;
+	z-index: 1;
+}
+
+#stitch {
+	left: 50%;
+	position: absolute;
+	top: -129px;
+	transform: translateX(-50%);
+	width: 210px;
+}
+
+#kejun {
+	border-radius: 18px;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#typed-strings {
+	display: none;
+}
+
+#name {
+	font-weight: 700;
+}
+
+#typed {
+	color: #fff;
+	font-family: 'Caveat', cursive;
+	font-size: 30px;
+	margin: 12px auto 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		padding: 150px 30px 72px;
+	}
+
+	#main,
+	#kejun {
+		width: 100%;
+	}
+}

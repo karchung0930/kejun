@@ -3,9 +3,37 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Ke Jun</title>
 </head>
 <body>
-	<h1>Hi, I'm Ke Jun</h1>
+	<div id="effect"></div>
+
+	<section id="main">
+
+		<img id="stitch" src="images/stitch.png">
+
+		<img id="kejun" src="images/kejun.png">
+	</section>
+
+	<div id="typed-strings">
+		<p>Hello there,
+		<p id="name">I am Ke Jun,</p>
+		<p>Stitch is my best friend.</p>
+	</div>
+
+	<p id="typed"></p>
+
+	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	<script>
+	var typed = new Typed('#typed', {
+		stringsElement: '#typed-strings',
+		typeSpeed: 50,
+		backSpeed: 50,
+		backDelay: 1000,
+		loop: true,
+		showCursor: false,
+	});
+	</script>
 </body>
 </html>
