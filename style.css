@@ -23,7 +23,7 @@ body {
 	box-sizing: border-box;
 	height: 100vh;
 	margin: 0;
-	padding: 180px 60px 120px;
+	padding: 210px 60px 120px;
 }
 
 #main {
@@ -84,7 +84,7 @@ body {
 
 @media screen and (max-width: 480px) {
 	body {
-		padding: 150px 30px 102px;
+		padding: 180px 30px 102px;
 	}
 
 	#main,
